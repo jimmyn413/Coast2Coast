@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Coast to Coast Copy</title>
+    <title>PrintShop</title>
 
     <!-- Bootstrap 3.3.7 -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -22,7 +22,12 @@
     <link href="/css/colors/base-light-color.min.css" rel="stylesheet">
     <link href="/css/colors/default.min.css" rel="stylesheet">
     <style>
-
+        .tripart {
+            border: solid 2px black;
+            background-color: lightblue;
+            height: 100%;
+            width: 100%;
+        }
     </style>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -79,6 +84,59 @@
         <div class="tab-content main">
             <!-- HOME -->
             <section class="tab-pane active" id="anch-slideshow">
+                <div class="row">
+                    <div class="col-lg-5 col-md-5 hidden-sm hidden-xs">
+                        <img class="animated slideInRight" src="http://slideshow.hibustudio.com/sliders/2016/4/572c25a0e4b0914d71d352c7/3.2016_127_5_3_29.jpg" height="300px" width="600px" />
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 animated bounceInUp">
+                        <h1>Call for a quote! ###-###-###</h1>
+                        <p>
+                            <h3>Description</h3><br />
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <center><h3 class="tripart">Left Column</h3></center>
+
+                        <span style="font-size: xx-large;">
+                            Address <br />
+                            City, State ZipCode
+                        </span>
+                        <br /><br /><br /><br />
+                        <img src="http://dailygenius.com/wp-content/uploads/2016/04/google-maps-new-interface1.jpg" height="300px" width="400px" style="float: left;" />
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                        <center>
+                            <h3 class="tripart">Right Column</h3>
+                            <img src="https://www.wcupa.edu/InfoServices/images/whatNew02.png" height="100px" width="300px" />
+                            <br />
+                            <div class="panel-body row">
+                                <div class="panel col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                    <span style="font-size: x-large">Shredding now available</span>
+                                    <img src="https://thoroughlyreviewed.com/wp-content/uploads/2015/05/Paper-Shredder2.png" />
+                                </div>
+                                <div class="panel col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                    <span style="font-size: x-large">
+                                        Binding Services
+                                    </span>
+                                    <img src="http://www.roofing-loveland.com/wp-content/themes/metro-pro/images/new-internet-special.png" />
+                                </div>
+                                <div class="panel col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                    <span style="font-size: x-large">
+                                        New Service
+                                    </span><br />
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                                </div>
+                            </div>
+                            <a href="http://www.yelp.com"><img class="animated infinite" id="yelp" src="http://www.brandsoftheworld.com/sites/default/files/styles/logo-thumbnail/public/032014/yelp_peoplelove_us_logo_.png?itok=u4HUpi_G" height="100px" width="100px" /></a>
+                            <a href="http://www.facebook.com"><img class="animated infinite" id="fb" src="https://lh3.googleusercontent.com/ZZPdzvlpK9r_Df9C3M7j1rNRi7hhHRvPhlklJ3lfi5jk86Jd1s0Y5wcQ1QgbVaAP5Q=w170" height="100px" width="100px" /></a>
+                        </center>
+                    </div>
+                </div>
+
 
 
             </section>
@@ -940,8 +998,8 @@
                                 <address>
                                     <div class="adr">
                                         <strong>Print Shop</strong><br />
-                                        <span >Address</span><br />
-                                        <span >City, State ZipCode</span>
+                                        <span>Address</span><br />
+                                        <span>City, State ZipCode</span>
                                     </div>
 
                                     <div class="tel">
@@ -1025,6 +1083,16 @@
     <script src="/assets/icomoon/js/svgxuse.min.js"></script>
     <!-- Default General Settings -->
     <script src="/js/main.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.1.1/css/mdb.min.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.1.1/js/mdb.min.js"></script>
     @RenderBody()
+    <script type="text/javascript">
+        $('#yelp').hover(function () {
+            $(this).toggleClass('jello');
+        });
+        $('#fb').hover(function () {
+            $(this).toggleClass('tada');
+        });
+    </script>
 </body>
 </html>
